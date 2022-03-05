@@ -1,0 +1,97 @@
+.navbar-container {
+  top: 0;
+  width: 100%;
+  position: sticky;
+  height: 3.5rem;
+  background-color: #008ecc;
+  padding: 0;
+  display: grid;
+  align-items: center;
+  padding-left: 2rem;
+  box-shadow: #45a29e 0px 2px 5px;
+  z-index: 1;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: left;
+  overflow: visible;
+}
+
+.navbar-container a {
+  all: unset;
+  color: #c9fafc;
+  padding: 0.1rem;
+}
+
+nav a:hover,
+a.contact:hover {
+  cursor: pointer;
+  box-shadow: #c9fafc 0px 2px;
+  transition: all 0.3s ease-out;
+}
+
+a.contact {
+  margin-left: auto;
+  margin-right: 2rem;
+}
+
+a.contact::after {
+  content: " ➜ ";
+  font-weight: 100;
+}
+
+nav {
+  margin-left: 1.5rem;
+}
+
+.navbar-container nav a {
+  margin: 1rem;
+  margin-right: 2rem;
+}
+
+span {
+  font-weight: 600;
+}
+
+span a::before {
+  transform: scaleX(0);
+  transform-origin: bottom left;
+}
+
+span a:hover::before {
+  transform: scaleX(0.01);
+  transform-origin: bottom left;
+}
+
+span a::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  inset: 0 0 0 0;
+  background: #c9fafc;
+  z-index: -1;
+  transition: transform 0.5s ease;
+}
+
+.navbar-container .about-me {
+  padding: 0;
+  color: #c9fafc;
+  font-weight: 700;
+}
+
+.navbar-container .about-me:hover {
+  all: unset;
+  color: #c9fafc;
+  cursor: pointer;
+}
+
+.about-me::after {
+  content: "/";
+  margin-left: 3rem;
+  color: white;
+}

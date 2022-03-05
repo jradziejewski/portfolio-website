@@ -1,19 +1,32 @@
-import logo from "./logo.svg"
+import React from "react"
 import "./App.css"
 import { About } from "../About/About"
+import { Contact } from "../Contact/Contact"
+import { Navbar } from "../Navbar/Navbar"
+import { Projects } from "../Projects/Projects"
+import { Skills } from "../Skills/Skills"
 
-function App() {
-  return (
-    <main>
-      <h1>This is going to be very good website soon!</h1>
-      <About />
-      {/* <Navbar /> */}
-      {/* <Projects /> */}
-      {/* <Skills /> */}
-      {/* <Testimonials /> */}
-      {/* <Contact />*/}
-    </main>
-  )
+export class App extends React.Component {
+  constructor(props) {
+    super(props)
+    this.scrollTo = this.scrollTo.bind(this)
+  }
+
+  scrollTo(e, id) {
+    let item = document.getElementById(id)
+    e.preventDefault() // Stop Page Reloading
+    item && item.scrollIntoView({ behavior: "smooth", block: "start" })
+  }
+
+  render() {
+    return (
+      <main>
+        <Navbar clickScroll={this.scrollTo} />
+        <About clickScroll={this.scrollTo} />
+        <Projects />
+        <Skills />
+        <Contact />
+      </main>
+    )
+  }
 }
-
-export default App

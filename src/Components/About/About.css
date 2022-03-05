@@ -3,3 +3,88 @@ h2 {
   color: black;
   text-align: center;
 }
+
+.about-container h1 {
+  padding-top: 10rem;
+  color: #008ecc;
+  text-shadow: 2px 2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff,
+    -2px -2px 0 #fff, 2px 0px 0 #fff, 0px 2px 0 #fff, -2px 0px 0 #fff,
+    0px -2px 0 #fff, 2px 2px 2px #cecece;
+}
+
+.about-container {
+  color: #38b8e0;
+  text-align: center;
+  margin-top: -2rem;
+  margin-bottom: 5rem;
+  background-image: url("./just-waves.png");
+  padding-bottom: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.photo-and-description {
+  display: flex;
+}
+
+.photo-and-description img {
+  width: 12rem;
+  height: 12rem;
+  border-radius: 100%;
+  border: 4px solid #008ecc;
+  object-fit: cover;
+  margin-right: 2rem;
+}
+
+.about-container p {
+  font-size: 1.35rem;
+  margin-top: 3rem;
+  font-weight: 700;
+  max-width: 40vw;
+  text-shadow: 2px 2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff,
+    -2px -2px 0 #fff, 2px 0px 0 #fff, 0px 2px 0 #fff, -2px 0px 0 #fff,
+    0px -2px 0 #fff, 2px 2px 2px #cecece;
+}
+
+.about-buttons {
+  margin-top: 3rem;
+}
+
+.about-buttons a {
+  all: unset;
+  font-size: 1.25rem;
+  padding: 0.5rem 2rem;
+  margin: 0 1rem;
+  background-color: #c9fafc;
+  color: #008ecc;
+  border: 1px solid #003a76;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  transition: all 0.3s ease-in-out;
+}
+
+.about-container .work-with-me-button {
+  color: #c9fafc;
+  background-color: #008ecc;
+}
+
+.work-with-me-button::before {
+  content: "🚀 ";
+}
+
+.past-projects-button::before {
+  content: "💻 ";
+}
+
+.past-projects-button:hover,
+.work-with-me-button:hover {
+  cursor: pointer;
+  opacity: 95%;
+}
+.past-projects-button:active,
+.work-with-me-button:active {
+  opacity: 95%;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+}
