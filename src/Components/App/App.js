@@ -14,7 +14,7 @@ export class App extends React.Component {
 
   scrollTo(e, id) {
     let item = document.getElementById(id)
-    e.preventDefault() // Stop Page Reloading
+    e.preventDefault()
     item && item.scrollIntoView({ behavior: "smooth", block: "start" })
   }
 
