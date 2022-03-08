@@ -9,6 +9,7 @@ export class Navbar extends React.Component {
   render() {
     return (
       <div className="navbar-container">
+        <img className="navbar-logo" src="./JR.svg" alt="logo" />
         <span>
           <a
             className="about-me"

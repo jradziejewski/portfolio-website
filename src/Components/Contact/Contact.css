@@ -1,0 +1,16 @@
+#contact {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  align-items: center;
+  justify-content: center;
+}
+
+.map {
+  margin-right: 5rem;
+  height: 500px;
+  width: 500px;
+  border-radius: 100%;
+  overflow: hidden;
+  box-shadow: #005292 -5px 5px, #006eaf -10px 10px, #008ecc -15px 15px,
+    #38b8e0 -20px 20px, #5fd7ef -25px 25px;
+}
