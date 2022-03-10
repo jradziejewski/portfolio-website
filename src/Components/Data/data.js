@@ -38,20 +38,24 @@ export const skills = [
     title: "C/C++",
     subtitle: "",
     logo: "",
+    description: "Excellent C++ skills. JK, i suck at it",
   },
   {
     title: "HTML+CSS",
     subtitle: "",
     logo: "",
+    description: "Im bad at html",
   },
   {
     title: "JavaScript",
     subtitle: "",
     logo: "",
+    description: "Good js skills lmao",
   },
   {
     title: "React.js",
     subtitle: "",
     logo: "",
+    description: "Nice react skills lul",
   },
 ]
