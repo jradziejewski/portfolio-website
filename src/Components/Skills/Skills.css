@@ -1,0 +1,28 @@
+#skills {
+  display: flex;
+  justify-content: center;
+}
+
+.card-front {
+  background-color: grey;
+}
+
+.card-back {
+  background-color: darkgray;
+}
+
+.card-front,
+.card-back {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  margin: 1rem;
+  height: 150px;
+  transition: all 0.5s ease-in-out;
+}
+
+.card-front:hover,
+.card-back:hover {
+  cursor: pointer;
+}
