@@ -11,13 +11,11 @@ export const Card = ({ skill }) => {
       flipDirection="horizontal"
     >
       <div className="card-front" onClick={() => setIsFlipped((prev) => !prev)}>
-        <section>
-          <h3>{skill.title}</h3>
-          <h3>{skill.subtitle}</h3>
-        </section>
+        <img src={skill.logo} alt={`${skill.title} logo`} />
       </div>
       <div className="card-back" onClick={() => setIsFlipped((prev) => !prev)}>
-        {skill.description}
+        <h3>{skill.title}</h3>
+        <p>{skill.subtitle}</p>
       </div>
     </ReactCardFlip>
   )

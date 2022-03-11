@@ -1,14 +1,19 @@
 #skills {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  background-color: white;
 }
 
 .card-front {
-  background-color: grey;
+  background-color: none;
+}
+
+.card-front img {
+  max-height: 150px;
 }
 
 .card-back {
-  background-color: darkgray;
 }
 
 .card-front,
@@ -20,6 +25,8 @@
   margin: 1rem;
   height: 150px;
   transition: all 0.5s ease-in-out;
+  border: 2px solid #008ecc;
+  border-radius: 10px;
 }
 
 .card-front:hover,
