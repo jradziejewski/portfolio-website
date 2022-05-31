@@ -16,11 +16,11 @@ export class About extends React.Component {
               <br />
             </h1>
             <div className="photo-and-description">
-              <img src={require("./me.jpg")} alt="me" />
+              <img src={require("./me.png")} alt="me" />
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui
-                laborum quasi, incidunt dolore iste nostrum cupiditate voluptas?
-                Laborum, voluptas natus?
+                I'm a second-year student of Mechatronics at Wroclaw University
+                of Science and Technology, passionate about Front-End web
+                development.
               </p>
             </div>
           </div>

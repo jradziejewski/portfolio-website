@@ -9,19 +9,22 @@ export class Projects extends React.Component {
         <div className="projects-header">
           <h1>Stuff I've created</h1>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo
-            facilis repellat ab cupiditate alias vero aliquid obcaecati quisquam
-            fuga dolore.
+            Projects I made for fun, as university projects and for learning
+            purposes.
           </p>
         </div>
         <div className="projects-gallery">
           {projects.map((project) => (
-            <a href={project.link} key={project.image}>
+            <a
+              href={project.link}
+              key={project.image}
+              data-hover={project.description}
+              target="_blank"
+            >
               {/* <img alt="gallery" src={project.image} /> */}
-              <div>
-                <h2>{project.subtitle}</h2>
-                <h1>{project.title}</h1>
-                <p>{project.description}</p>
+              <div className="projects-project">
+                <span id="projects-subtitle">{project.subtitle}</span>
+                <span id="projects-title">{project.title}</span>
               </div>
             </a>
           ))}

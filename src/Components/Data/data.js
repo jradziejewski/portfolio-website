@@ -1,11 +1,11 @@
 export const projects = [
   {
-    title: "Playlistify",
+    title: "EasySpotiPlaylist",
     subtitle: "React",
     description:
-      "An web app that allows users to quickly create Spotify playlists.",
+      "A web app that allows users to quickly create Spotify playlists.",
     image: "/project-images/img1.jpg",
-    link: "",
+    link: "https://github.com/jradziejewski/spotify-playlist-creator",
   },
   {
     title: "C projects for classes",
@@ -13,45 +13,45 @@ export const projects = [
     description:
       "Projects that I made using C language during programming university classes.",
     image: "/project-images/img2.png",
-    link: "",
+    link: "https://github.com/jradziejewski?tab=repositories",
   },
   {
     title: "C++ projects for classes",
     subtitle: "C++",
     description:
-      "Projects that I made using C language during programming university classes.",
+      "Projects that I made using C++ language during programming university classes.",
     image: "/project-images/img3.png",
-    link: "",
+    link: "https://github.com/jradziejewski?tab=repositories",
   },
   {
-    title: "FrontendMendor coding challenges",
+    title: "Designs",
     subtitle: "HTML, CSS, JavaScript",
     description:
-      "Various challenges from FrontendMentor platform that I made for fun.",
+      "Various challenges from FrontendMentor platform that I made in order to learn design principles.",
     image: "/project-images/img4.jpg",
-    link: "",
+    link: "https://github.com/jradziejewski/jradziejewski",
   },
 ]
 
 export const skills = [
   {
     title: "C/C++",
-    subtitle: "",
+    subtitle: " were first programming languages that I learned.",
     logo: "/languages-svg/cplusplus.svg",
   },
   {
     title: "JavaScript",
-    subtitle: "",
+    subtitle: "is my main programming language.",
     logo: "/languages-svg/javascript.svg",
   },
   {
     title: "HTML+CSS",
-    subtitle: "",
+    subtitle: "with frameworks SASS and Tailwind.",
     logo: "/languages-svg/css.svg",
   },
   {
     title: "React.js",
-    subtitle: "",
+    subtitle: "is my first JS framework that I'm currently learning.",
     logo: "/languages-svg/react.svg",
   },
 ]

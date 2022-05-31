@@ -17,10 +17,11 @@ h2 {
   text-align: center;
   margin-top: -2rem;
   margin-bottom: 5rem;
-  background-image: url("./just-waves.png");
+  background-image: url("./trees.png");
   padding-bottom: 10rem;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
 }
 
@@ -49,6 +50,8 @@ h2 {
 
 .about-buttons {
   margin-top: 3rem;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .about-buttons a {
@@ -87,4 +90,28 @@ h2 {
 .work-with-me-button:active {
   opacity: 95%;
   box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+}
+
+@media only screen and (max-width: 1020px) {
+  .about-container {
+    margin-top: -5rem;
+  }
+
+  .photo-and-description img {
+    display: none;
+  }
+
+  .about-buttons {
+    all: unset;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .about-buttons a {
+    margin: 1rem 0;
+    width: 50vw;
+  }
 }

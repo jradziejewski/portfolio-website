@@ -20,11 +20,16 @@ export class Skills extends React.Component {
 
   render() {
     return (
-      <div id="skills">
-        {skills.map((item, index) => (
-          <Card skill={item} key={`card-${index}`} />
-        ))}
-      </div>
+      <>
+        <div id="skills">
+          <div className="skills-cards">
+            {" "}
+            {skills.map((item, index) => (
+              <Card skill={item} key={`card-${index}`} />
+            ))}
+          </div>
+        </div>
+      </>
     )
   }
 }
