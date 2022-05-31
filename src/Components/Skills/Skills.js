@@ -1,7 +1,7 @@
 import React from "react"
 import "./Skills.css"
-import { projects, skills } from "../Data/data"
-import ReactCardFlip from "react-card-flip"
+import { skills } from "../Data/data"
+// import ReactCardFlip from "react-card-flip"
 import { Card } from "./SkillsCard"
 
 export class Skills extends React.Component {

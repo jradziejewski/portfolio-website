@@ -1,7 +1,7 @@
 import React from "react"
 import "./App.css"
 import { About } from "../About/About"
-import { Contact } from "../Contact/Contact"
+// import { Contact } from "../Contact/Contact"
 import { Navbar } from "../Navbar/Navbar"
 import { Projects } from "../Projects/Projects"
 import { Skills } from "../Skills/Skills"

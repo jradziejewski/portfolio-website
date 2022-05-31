@@ -20,6 +20,7 @@ export class Projects extends React.Component {
               key={project.image}
               data-hover={project.description}
               target="_blank"
+              rel="noreferrer"
             >
               {/* <img alt="gallery" src={project.image} /> */}
               <div className="projects-project">
