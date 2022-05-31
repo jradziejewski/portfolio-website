@@ -114,4 +114,11 @@ h2 {
     margin: 1rem 0;
     width: 50vw;
   }
+
+  .photo-and-description {
+    justify-content: center;
+  }
+  .photo-and-description p {
+    max-width: 50%;
+  }
 }
