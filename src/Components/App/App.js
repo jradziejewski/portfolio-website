@@ -5,6 +5,7 @@ import { About } from "../About/About"
 import { Navbar } from "../Navbar/Navbar"
 import { Projects } from "../Projects/Projects"
 import { Skills } from "../Skills/Skills"
+import { Location } from "../Location/Location"
 
 export class App extends React.Component {
   constructor(props) {
@@ -25,6 +26,7 @@ export class App extends React.Component {
         <About clickScroll={this.scrollTo} />
         <Projects />
         <Skills />
+        <Location />
         {/* <Contact /> */}
       </main>
     )

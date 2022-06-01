@@ -1,0 +1,35 @@
+.location-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap-reverse;
+  margin: 5rem 0;
+}
+
+.map {
+  margin-right: 5rem;
+  height: 50vh;
+  width: 50vh;
+  border-radius: 100%;
+  border: 3px solid #002a61;
+  overflow: hidden;
+  box-shadow: #5fd7ef 0px 2px 4px, #002a61 0px 7px 13px -3px,
+    #008ecc 0px -3px 0px inset;
+}
+
+.location-text,
+.location-text h2 {
+  color: white;
+  text-shadow: 2px 2px 0 #002a61, 2px -2px 0 #002a61, -2px 2px 0 #002a61,
+    -2px -2px 0 #002a61, 2px 0px 0 #002a61, 0px 2px 0 #002a61,
+    -2px 0px 0 #002a61, 0px -2px 0 #002a61, 2px 2px 2px #002a61;
+}
+
+@media only screen and (max-width: 1020px) {
+  .location-container {
+    justify-content: space-around;
+  }
+  .map {
+    margin: 3rem 0;
+  }
+}

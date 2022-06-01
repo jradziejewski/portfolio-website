@@ -5,16 +5,6 @@
   justify-content: center;
 }
 
-.map {
-  margin-right: 5rem;
-  height: 500px;
-  width: 500px;
-  border-radius: 100%;
-  overflow: hidden;
-  box-shadow: #5fd7ef 0px 2px 4px, #002a61 0px 7px 13px -3px,
-    #008ecc 0px -3px 0px inset;
-}
-
 @media only screen and (max-width: 1020px) {
   .map {
     display: none;
