@@ -44,7 +44,7 @@ export class Navbar extends React.Component {
           className="contact"
           href="/"
           onClick={(e) => {
-            this.scroll(e, "location")
+            this.scroll(e, "contact")
           }}
         >
           Contact me

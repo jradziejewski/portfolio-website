@@ -1,40 +1,44 @@
-import React from "react"
-import "./Contact.css"
+import React from "react";
+import "./Contact.css";
 
 export class Contact extends React.Component {
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
       name: "",
       email: "",
       message: "",
-    }
+    };
   }
 
   handleNameChange(e) {
-    this.setState({ name: e.target.value })
+    this.setState({ name: e.target.value });
   }
 
   handleEmailChange(e) {
-    this.setState({ email: e.target.value })
+    this.setState({ email: e.target.value });
   }
 
   handleMessageChange(e) {
-    this.setState({ message: e.target.value })
+    this.setState({ message: e.target.value });
   }
 
   handleSubmit(e) {
-    e.preventDefault()
-    const name = this.state.name
-    const email = this.state.email
-    const message = this.state.message
+    e.preventDefault();
+    const name = this.state.name;
+    const email = this.state.email;
+    const message = this.state.message;
+    if (name === "" || email === "" || message === "") {
+      alert("Please don't leave any field empty.");
+      return;
+    }
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({ "form-name": "contact", name, email, message }),
     })
       .then(() => alert("Message sent!"))
-      .catch((error) => alert(error))
+      .catch((error) => alert(error));
   }
 
   render() {
@@ -42,7 +46,7 @@ export class Contact extends React.Component {
       <div id="contact">
         <div className="contact-container">
           <form netlify name="contact" onSubmit={this.handleSubmit.bind(this)}>
-            <h2>Hire me</h2>
+            <h2>Send me a message</h2>
             <p>
               {" "}
               If you wish to contact me with any matter, feel free to use the
@@ -76,6 +80,6 @@ export class Contact extends React.Component {
           </form>
         </div>
       </div>
-    )
+    );
   }
 }

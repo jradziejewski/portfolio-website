@@ -29,7 +29,7 @@ export class About extends React.Component {
               className="work-with-me-button"
               href="/"
               onClick={(e) => {
-                this.scroll(e, "location")
+                this.scroll(e, "contact")
               }}
             >
               Work with me
